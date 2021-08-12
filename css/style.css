@@ -59,6 +59,10 @@
     text-shadow: none;
   }
 
+  .title {
+    color: whitesmoke;
+  }
+
   footer {
     background: #001f3f;
     padding: 40px 35px;
@@ -96,19 +100,14 @@
     width: 50%;
   }
   
-  .section-title-primary-border {
-      border-color: black;
-  }
-  .primary-border {
-    border-color: whitesmoke;
-  }
-  
-  .secondary-border {
-    border-color: whitesmoke;
-  }
-
   .intro {
-      color: #001f3f;
+      border-radius: 25px;
+      background: #001f3f;
+      padding: 20px;
+      width: auto;
+      height: 150px;
+      outline: 2px solid whitesmoke;
+      border: 2px solid whitesmoke;
   }
 
   .intro p {
@@ -120,12 +119,24 @@
     text-align: center;
   }
 
+
+
   .intro h2 {
-      color: black;
+ color: whitesmoke;
+  }
+
+  .about-me-p {
+    color: whitesmoke;
   }
 
   .exp { 
+    border-radius: 25px;
     background: #001f3f;
+    padding: 20px;
+    width: auto;
+    height: 500px;
+    outline: 2px solid whitesmoke;
+    border: 2px solid whitesmoke;
   }
   
   .step:last-child {
@@ -139,23 +150,29 @@
     align-items: center;
   }
   
-  .step-text {
+  .text {
     flex: 12;
   }
   
-  .step-text p {
+  .text p {
     color: whitesmoke;
     font-size: 18px;
   }
   
-  .step-text h4 {
+  .text h4 {
     font-size: 26px;
     line-height: 1.5;
     color: whitesmoke;
   }
   
   .contact {
+    border-radius: 25px;
     background: #001f3f;
+    padding: 20px;
+    width: auto;
+    height: 250px;
+    outline: 2px solid whitesmoke;
+    border: 2px solid whitesmoke;
   }
   
   .contact h2 {
