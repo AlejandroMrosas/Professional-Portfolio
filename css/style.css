@@ -5,7 +5,7 @@
   }
   
   body {
-    color: #001f3f;
+    color: black;
     font-family: Helvetica, Arial, sans-serif;
   }
   
@@ -101,13 +101,16 @@
   }
   
   .intro {
-      border-radius: 25px;
-      background: #001f3f;
-      padding: 20px;
-      width: auto;
-      height: 150px;
-      outline: 2px solid whitesmoke;
-      border: 2px solid whitesmoke;
+      background: whitesmoke;
+      margin: auto;
+      padding: 10px;
+      width: 80%;
+      height: 370px;
+      outline: 2px solid black;
+      border: 3px solid black;
+      border: 2px solid black;
+      box-shadow: 10px 10px 10px gray;
+
   }
 
   .intro p {
@@ -116,7 +119,7 @@
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
-    text-align: center;
+    text-align: right;
   }
 
 
@@ -125,18 +128,29 @@
  color: whitesmoke;
   }
 
-  .about-me-p {
+  .about-me p {
     color: whitesmoke;
   }
 
-  .exp { 
-    border-radius: 25px;
-    background: #001f3f;
-    padding: 20px;
-    width: auto;
+  .Portfolio { 
+    background: whitesmoke;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
     height: 500px;
-    outline: 2px solid whitesmoke;
-    border: 2px solid whitesmoke;
+    outline: 2px solid black;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px gray;
+  }
+
+  .img {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .Portfolio h2, h4, p {
+    color: black ;
   }
   
   .step:last-child {
@@ -155,28 +169,30 @@
   }
   
   .text p {
-    color: whitesmoke;
+    color: black;
     font-size: 18px;
   }
   
   .text h4 {
     font-size: 26px;
     line-height: 1.5;
-    color: whitesmoke;
+    color: black;
   }
   
   .contact {
-    border-radius: 25px;
-    background: #001f3f;
-    padding: 20px;
-    width: auto;
+    background: whitesmoke;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
     height: 250px;
-    outline: 2px solid whitesmoke;
-    border: 2px solid whitesmoke;
+    outline: 2px solid black;
+    border: 2px solid black;
+    border: 2px solid black;
+    box-shadow: 10px 10px 10px gray;
   }
   
   .contact h2 {
-    color: whitesmoke;
+    color: black;
   }
   
   .contact-info {
@@ -191,11 +207,15 @@
   }
   
   .contact-info div {
-    color: whitesmoke;
+    color: black;
   }
 
   .flex-row {
     display: flex;
+    color:white ;
   }
   
+  .flex-row h2 {
+    color: black;
+  }
   
