@@ -5,11 +5,10 @@
   }
   
   body {
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: #001f3f;
   }
   
-  
+  /* Start of Header */
   header {
     padding: 20px 35px;
     background-color: #001f3f;
@@ -47,9 +46,9 @@
   }
   
   header nav ul li a {
-    padding: 5px 15px;
+    padding: 5px 5px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 25px;
   }
 
   header nav ul li a:hover {
@@ -58,11 +57,18 @@
     border-radius: 15px;
     text-shadow: none;
   }
+/* End of Header*/
 
+/* Title */
   .title {
     color: whitesmoke;
   }
 
+  .welcome {
+    display: flex;
+  }
+
+  /* Start of footer */
   footer {
     background: #001f3f;
     padding: 40px 35px;
@@ -72,96 +78,70 @@
 }
   
   footer h2 {
-    color: #024e76;
+    color: whitesmoke;
     font-size: 30px;
     margin: 0;
   }
-  
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: #024e76;
-  }
+/* End of Footer*/
 
-  section {
-    padding: 60px;
-  }
-  
-  .section-title {
-    font-size: 48px;
-    border-bottom: 3px solid;
-    color: whitesmoke;
-    padding-bottom: 10px;
-    text-align: left;
-    margin: 0 auto 35px auto;
-    width: 50%;
-  }
-  
+/* Start of intro */
   .intro {
-      background: whitesmoke;
+      background: center;
       margin: auto;
       padding: 10px;
-      width: 80%;
+      width: 100%;
       height: 370px;
-      outline: 2px solid black;
-      border: 3px solid black;
-      border: 2px solid black;
-      box-shadow: 10px 10px 10px gray;
 
   }
 
   .intro p {
     line-height: 1.7;
-    color: black;
     width: 80%;
     margin: 0 auto;
     font-size: 20px;
-    text-align: right;
-  }
-
-
-
-  .intro h2 {
- color: whitesmoke;
-  }
-
-  .about-me p {
+    text-align:center;
     color: whitesmoke;
   }
 
-  .Portfolio { 
-    background: whitesmoke;
+  .intro h2 {
+    color: whitesmoke;
     margin: auto;
-    padding: 10px;
-    width: 80%;
-    height: 500px;
-    outline: 2px solid black;
-    border: 2px solid black;
-    box-shadow: 10px 10px 10px gray;
+    display: flex;
+    justify-content: center;
+  }
+  /* End of Intro*/
+
+  .glendale-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
-  .img {
+  .Portfolio { 
+    background: lightgrey;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    outline: 2px solid black;
+  }
+
+  .img img {
     float: left;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 8px;
   }
 
-  .Portfolio h2, h4, p {
+  .Portfolio h2, h4 {
     color: black ;
   }
-  
-  .step:last-child {
-    border-bottom: none;
-  }
-  
-  .exp-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+
+  .run-buddy-img img {
+    width: 400px;
+    height: 250px;
+    margin: 20px 20px 20px 20px;;
   }
   
   .text {
@@ -184,38 +164,82 @@
     margin: auto;
     padding: 10px;
     width: 80%;
-    height: 250px;
+    height: 150px;
     outline: 2px solid black;
     border: 2px solid black;
     border: 2px solid black;
     box-shadow: 10px 10px 10px gray;
   }
-  
   .contact h2 {
     color: black;
   }
-  
+
   .contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-size: 30px;
   }
+ 
   
   .contact-info > * {
     flex: 1;
     margin: 15px;
+    display: flex;
+    list-style: none;
   }
   
   .contact-info div {
     color: black;
   }
 
-  .flex-row {
-    display: flex;
-    color:white ;
-  }
-  
-  .flex-row h2 {
-    color: black;
-  }
-  
+  @media screen and (max-width: 375px) {
+    
+    .intro {
+      margin: 0;
+      height: 775px;
+
+    }
+    .about-me-intro {
+     margin: 0 25%; 
+    }
+
+    .about-me-p {
+      display: -webkit-inline-box;
+      margin: 6% -5% 10 10%;
+    }
+    .about-me-title {
+      display:flex;
+      margin: 0 15%;
+    }
+
+    .img {
+      position:relative;
+      margin: 0 25%;
+    }
+
+    .run-buddy-img {
+      display:auto;
+      margin: 0 -6% 0 -9% ;
+    }
+
+      .Portfolio {
+        height: 1000px;
+        padding: 0;
+      }
+      .contact {
+        font-size: unset;
+          background: lightgrey;
+          margin: auto;
+          padding: 10px;
+          width: 75%;
+          height: 250px;
+          outline: 2px solid black;
+          border: 2px solid black;
+          box-shadow: 10px 10px 10px gray;
+        }
+      
+      .contact-info {
+      font-size:15px;
+     }   
+    }
